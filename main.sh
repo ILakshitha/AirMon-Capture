@@ -3,13 +3,17 @@
 # Killing interfering processes
 echo "Killing interfering processes..."
 sudo airmon-ng check kill
+sleep 1
 
 # Start monitoring mode
 echo "Starting monitoring mode on wlan0..."
 sudo airmon-ng start wlan0
+sleep 1
 
 # Scan for Wi-Fi networks
 echo "Scanning for Wi-Fi networks..."
+sleep 1
+
 sudo airodump-ng wlan0mon
 
 # Wait for user input to stop scanning and select BSSID
