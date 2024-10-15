@@ -10,7 +10,7 @@ sudo airmon-ng start wlan0
 
 # Scan for Wi-Fi networks
 echo "Scanning for Wi-Fi networks..."
-sudo airodump-ng wlan0mon &
+sudo airodump-ng wlan0mon
 
 # Wait for user input to stop scanning and select BSSID
 echo "Press Ctrl+C to stop the scan once you find the target network."
