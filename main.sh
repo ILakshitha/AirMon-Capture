@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
-
 # ANSI color code for red
 RED='\033[0;31m'
 # ANSI color code to reset to default
