@@ -1,5 +1,21 @@
 #!/bin/bash
 
+#!/bin/bash
+
+# ANSI color code for red
+RED='\033[0;31m'
+# ANSI color code to reset to default
+NC='\033[0m' # No Color
+
+echo -e "${RED}   _    ___ _____  __  __  ___  _   _    ____    _    ____ _____ _   _ ____  _____ ${NC}"
+echo -e "${RED}  / \  |_ _|  __ \|  \/  |/ _ \| \ | |  / ___|  / \  |  _ \_   _| | | |  _ \| ____|${NC}"
+echo -e "${RED} / _ \  | || |__) | |\/| | | | |  \| | | |     / _ \ | |_) || | | | | | |_) |  _|  ${NC}"
+echo -e "${RED}/ ___ \ | ||  _  /| |  | | |_| | |\  | | |    / ___ \|  __/ | | | |_| |  _ <| |___ ${NC}"
+echo -e "${RED}/_/   \_\___|_| \_\_|  |_|\___/|_| \_|  \____/_/   \_\_|    |_|  \___/|_| \_\_____|${NC}"
+echo ""
+
+sleep 2
+
 # Killing interfering processes
 echo "Killing interfering processes..."
 sudo airmon-ng check kill
