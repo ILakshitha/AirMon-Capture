@@ -34,11 +34,11 @@ sudo airodump-ng wlan0mon
 echo "Press Ctrl+C to stop the scan once you find the target network."
 read -p "Enter the BSSID of the target network: " bssid
 read -p "Enter the channel of the target network: " channel
-read -p "Enter file name to should write captured:" capture
+read -p "Enter file name to should write captured:" fname
 
 
 # Start capturing packets on the selected BSSID
 echo "Capturing data packets on BSSID: $bssid..."
-sudo airodump-ng -w $capture -c $channel --bssid $bssid   wlan0mon
+sudo airodump-ng -w $fname -c $channel --bssid $bssid   wlan0mon
 
 echo "Packet capture started. Check the file 'capture' for the results."
