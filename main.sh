@@ -38,6 +38,7 @@ read -p "Enter file name to should write captured:" fname
 
 
 
+
 # Start capturing packets on the selected BSSID
 echo "Capturing data packets on BSSID: $bssid..."
 sudo airodump-ng -w $fname -c $channel --bssid $bssid   wlan0mon
