@@ -41,3 +41,4 @@ echo "Capturing data packets on BSSID: $bssid..."
 sudo airodump-ng -w $fname -c $channel --bssid $bssid   wlan0mon
 
 echo "Packet capture started. Check the file 'capture' for the results."
+
